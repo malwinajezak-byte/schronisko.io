@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Georgia, serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+main{
+    display: flex;
+    margin: 0;
+    padding: 20px;
+}
+.baner{
+    height: 260px;
+    width: 100%;
+    background-image: url("./baner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 44, 5, 0.529);
+    color: #f5f7fa;
+}
+.baner h1{
+    font-size: 70px;
+    color: white;
+    padding: 20px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgb(38, 164, 38);
+    padding: 20px;
+    flex-wrap: wrap;
+    margin: 0;
+    width: 100%;
+}
+.menu{
+    margin: 0;
+    padding: 0;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    background-color: brown;
+    padding: 12px 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+nav a:hover{
+    background-color: rgb(109, 24, 24);
+    transform: scale(1.05);
+}
+section{
+    padding: 40px;
+    text-align: center;
+}
+section h2{
+    margin-bottom: 20px;
+    color: brown;
+}
+.karty{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.karta{
+    background-color: white;
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    padding-bottom: 20px;
+}
+.karta img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.karta h3{
+    margin: 15px 0;
+}
+.karta p{
+    padding: 0 15px;
+}
+form{
+    width: 350px;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    border: 3px solid green;
+    font-size: large;
+}
+small{
+    font-size: smaller;
+}
+input, textarea{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+button{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover{
+    background-color: darkgreen;
+}
+footer{
+    background-color: rgba(0, 36, 0, 0.995);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+footer div{
+    width: 33.33%;
+}
+.linia{
+    border-right:3px groove white;
+}
+.aktualności{
+    padding: 40px;
+    background-color: #f5f7fa;
+}
+.aktualności h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #333;
+}
+.aktualności article{
+    background-color: white;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.aktualności article:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.aktualności h3{
+    color: #ff7b00;
+    margin-bottom: 12px;
+    font-size: 24px;
+}
+.aktualności p{
+    color: #555;
+    line-height: 1.7;
+    font-size: 17px;
+}
+.stopka{
+    display: flex;
+    font-size: x-large;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.inicjatywa{ 
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    gap: 30px;
+    padding: 0px;
+    flex-wrap:wrap;
+    background-color: #f5f7fa;
+}
+.pomoc{
+    flex: 1;
+}
+.pomoc h2{
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+}
+.karty{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+}
+.karty_p{
+    display: flex;
+}
+.podopieczni{
+    display: grid;
+    justify-items: center;
+}
+.formularz{
+    flex: 1;
+    background-color: white;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.karta{
+    background-color: white;
+    padding: 25px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.karta:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+.karta h3{
+    color: #ff7b00;
+    margin-bottom: 10px;
+}
+.karta p{
+    color: #555;
+    line-height: 1.6;
+}
+.cytat{
+    flex: 1;
+}
+.for_a{
+    flex: 1;
+}
+.adopt{
+    display: flex;
+}
